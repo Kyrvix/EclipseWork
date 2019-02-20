@@ -1,0 +1,20 @@
+package com.qa.enums;
+
+public enum Day {
+	MONDAY ("Crap"), 
+	TUESDAY ("Slightly better"), 
+	WEDNESDAY ("Despairing"), 
+	THURSDAY ("Hopeful"), 
+	FRIDAY ("Dead"), 
+	SATURDAY ("Recovering"), 
+	SUNDAY ("Church");
+	
+	public String feeling;
+	
+	Day(String feeling){
+		this.feeling = feeling;
+	}
+}
+
+
+

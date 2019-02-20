@@ -1,0 +1,16 @@
+package main;
+
+public class Plane extends Vehicle {
+	public Plane() {
+		super(8, 4, "Land, Air", "Large");
+	}
+	
+	public void move() {
+		System.out.println("The plane moves forward then tilts up into the air.");
+	}
+	
+	public void start() {
+		System.out.println("The plane has started.");
+		setEngineOn(true);
+	}
+}

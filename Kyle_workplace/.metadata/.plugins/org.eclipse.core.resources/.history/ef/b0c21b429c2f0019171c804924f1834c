@@ -1,0 +1,18 @@
+package main;
+
+public class Car extends Vehicle {
+	
+	public Car() {
+		super(4, 5, "Land", "Medium");
+	}
+	
+	public void move() {
+		System.out.println("The Car moves forward.");
+	}
+	
+	public void start() {
+		System.out.println("The Car has started.");
+		setEngineOn(true);
+	}
+
+}

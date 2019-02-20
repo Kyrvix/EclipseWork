@@ -1,0 +1,59 @@
+package main;
+
+public abstract class Vehicle {
+	private int numWheels;
+	private int numDoors;
+	private String typeOfTravel;
+	private boolean engineOn;
+
+	public abstract void move();
+
+	public abstract void start();
+
+	public Vehicle(int numWheels, int numDoors, String typeOfTravel) {
+		this.numWheels = numWheels;
+		this.numDoors = numDoors;
+		this.typeOfTravel = typeOfTravel;
+	}
+
+	public boolean isEngineOn() {
+		return engineOn;
+	}
+
+	public void setEngineOn(boolean engineOn) {
+		this.engineOn = engineOn;
+	}
+
+	public int getNumWheels() {
+		return numWheels;
+	}
+
+	public void setNumWheels(int numWheels) {
+		this.numWheels = numWheels;
+	}
+
+	public int getNumDoors() {
+		return numDoors;
+	}
+
+	public void setnumDoors(int numDoors) {
+		this.numDoors = numDoors;
+	}
+
+	public String getTypeOfTravel() {
+		return typeOfTravel;
+	}
+
+	public void setTypeOfTravel(String typeOfTravel) {
+		this.typeOfTravel = typeOfTravel;
+	}
+
+	@Override
+	public String toString() {
+		return "Vehicle [Wheels=" + numWheels + ", Doors=" + numDoors + ", typeOfTravel=" + typeOfTravel
+				+ ", engineOn=" + engineOn + "]";
+	}
+
+
+
+}

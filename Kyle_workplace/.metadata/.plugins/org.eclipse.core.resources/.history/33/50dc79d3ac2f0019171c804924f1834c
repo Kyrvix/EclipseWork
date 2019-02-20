@@ -1,0 +1,18 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+
+	private List<Vehicle> vehicles = new ArrayList<>();
+
+	public double calcBill() {
+		double sum = 0;
+		for (Vehicle v : vehicles) {
+			sum += v.calcBill();
+		}
+		return sum;
+	}
+
+}

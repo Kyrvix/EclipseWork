@@ -1,0 +1,23 @@
+package main;
+
+public class CatBuilder {
+	int weight;
+	String name;
+	int lives;
+	
+	public CatBuilder weight(int weight) {
+		this.weight = weight;
+		return this;
+	}
+	public CatBuilder name(String name) {
+		this.name = name;
+		return this;
+	}
+	public CatBuilder lives(int lives) {
+		this.lives = lives;
+		return this;
+	}
+	public Cat buildCat() {
+		return new Cat(weight, name, lives);
+	}
+}

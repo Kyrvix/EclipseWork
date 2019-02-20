@@ -1,0 +1,8 @@
+package main;
+
+public abstract class Scrolls extends Treasure {
+	public boolean wearable() {
+		return false;
+	}
+	
+}

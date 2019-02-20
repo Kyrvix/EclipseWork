@@ -1,0 +1,13 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		StringManipulation stringManip = new StringManipulation();
+		System.out.println(stringManip.stringSplit("Why have you done this to me, I feel abused"));
+		stringManip.stringVert("I don't want to do it");
+		stringManip.stringInvert("This is so much fun, right");
+		System.out.println(stringManip.stringFind("I want nothing to do", "nothing"));
+	}
+
+}

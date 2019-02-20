@@ -1,0 +1,10 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		BlackJack blackJ = new BlackJack(1, 21);
+		System.out.println(blackJ.check());
+	}
+
+}

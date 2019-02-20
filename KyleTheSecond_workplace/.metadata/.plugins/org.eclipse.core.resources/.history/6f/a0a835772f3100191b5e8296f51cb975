@@ -1,0 +1,7 @@
+package main;
+
+public class abstract Armour extends Treasure {
+	public abstract boolean wearable();
+	
+	public abstract int value();
+}

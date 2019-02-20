@@ -1,0 +1,29 @@
+package main;
+
+public class Goldlilocks {
+	
+	private int weight;
+	private int temp;
+	
+	public Goldlilocks(int weight, int temp) {
+		
+		this.weight = weight;
+		this.temp = temp;
+	}
+	
+	
+	
+	
+	
+	public String findChair(int weight, int temp) {
+		
+		
+		
+		
+		
+		
+		
+		return "cant find chair";
+		
+	}
+}

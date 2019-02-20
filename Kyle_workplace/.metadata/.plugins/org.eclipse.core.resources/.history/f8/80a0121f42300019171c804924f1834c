@@ -1,0 +1,13 @@
+package testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class BlackJackTesting {
+	@Test
+	public void test1() {
+		assertEquals(4, 4);
+	}
+	
+}

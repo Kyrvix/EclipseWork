@@ -1,0 +1,18 @@
+package main;
+
+public class Chair {
+	
+	private int maxWeight;
+	
+	public Chair(int maxWeight) {
+		
+		this.maxWeight = maxWeight;
+	}
+
+	@Override
+	public String toString() {
+		return "Chair [maxWeight=" + maxWeight + "]";
+	}
+	
+
+}

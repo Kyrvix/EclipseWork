@@ -1,0 +1,16 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+		Person dave = new Person("Dave", 24, "Cleaner");
+		Person bob = new Person("Bob", 29, "Manager");
+		Person will = new Person("Dick", 35, "Consultant");
+		System.out.println(dave.toString());
+		System.out.println(bob.toString());
+		System.out.println(will.toString());
+		bob.setJobTitle("Cunt");
+		System.out.println(bob.toString());
+	}
+
+}

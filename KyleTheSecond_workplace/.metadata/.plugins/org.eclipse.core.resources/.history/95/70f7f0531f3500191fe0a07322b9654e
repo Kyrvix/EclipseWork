@@ -1,0 +1,37 @@
+package main;
+
+import java.util.ArrayList;
+
+public abstract class Item {
+	public int id;
+	public static ArrayList<Item> inventory = new ArrayList<Item>();
+	public static ArrayList<Item> checkedOut = new ArrayList<Item>();
+	
+
+	public Item(int id) {
+		this.id = id;
+		inventory.add(this);
+	}
+
+	public void remove(int idNum) {
+		System.out.println("Beginning " + inventory.size());
+		for(int i = 0; i < inventory.size(); i++) {
+			System.out.println(inventory.get(i).getId()); 
+			if(inventory.get(i).getId() == idNum) {
+				System.out.println("Hello Kitty");
+				inventory.remove(i);
+			}
+		}
+		System.out.println("End " + inventory.size());
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+}

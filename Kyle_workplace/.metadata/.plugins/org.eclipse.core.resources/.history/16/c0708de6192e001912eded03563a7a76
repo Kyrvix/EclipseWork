@@ -1,0 +1,39 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Calculator calculate = new Calculator();
+		Scanner s = new Scanner(System.in);
+		System.out.println("First number: ");
+		String in1 = s.nextLine();
+		int input1 = Integer.parseInt(in1);
+		System.out.println("Second number: ");
+		String in2 = s.nextLine();
+		int input2 = Integer.parseInt(in2);
+		System.out.println("Operation used: ");
+		String sign = s.nextLine();
+		
+		if(sign.equals("+")) {
+			System.out.println(calculate.addition(input1, input2));
+		}
+		else if(sign.equals("-")) {
+			System.out.println(calculate.subtract(input1, input2));
+		}
+		else if(sign.equals("*")) {
+			System.out.println(calculate.multiply(input1, input2));
+		}
+		else {
+			System.out.println(calculate.divide(input1, input2));
+		}
+		
+		
+		
+		
+		System.out.println(calculate.addition(4, 7));
+		System.out.println(calculate.divide(5, 13));
+	}
+
+}

@@ -1,0 +1,29 @@
+package main;
+
+public class Compass {
+	
+	private double distance = 5;
+	private String direction;
+
+	public double newDist(String direction) {
+		if(direction.equals("North") || direction.equals("north") || direction.equals("N") || direction.equals("n")) {
+			return distance - 0.5;
+		}
+		else if(direction.equals("East") || direction.equals("east") || direction.equals("E") || direction.equals("e")) {
+			return distance - 1.5;
+		}
+		else if(direction.equals("South") || direction.equals("south") || direction.equals("S") || direction.equals("s")) {
+			return distance + 0.5;
+		}
+		else if(direction.equals("West") || direction.equals("west") || direction.equals("W") || direction.equals("w")) {
+			return distance + 1.5;
+		}
+		else {
+			System.out.println("That is not a valid direction");
+		}
+			
+		
+		
+		return 0;
+	}
+}

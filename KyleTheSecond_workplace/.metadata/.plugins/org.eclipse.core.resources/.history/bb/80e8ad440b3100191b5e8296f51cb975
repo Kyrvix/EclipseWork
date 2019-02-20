@@ -1,0 +1,14 @@
+package main;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+
+		System.out.println("You wake up in a mysterious place. All you see is a grey swamp surrounding you,");
+		System.out.println("Fog floats off the many bogs of water making vision poor,");
+		System.out.println("A cacophony of caws can be heard in the distance,");
+		System.out.println("You notice a watch in your left hand that only seems to contain a distance,");
+		System.out.println("Try ""North"", ""East"", ""South"", or ""West""");
+	}
+
+}

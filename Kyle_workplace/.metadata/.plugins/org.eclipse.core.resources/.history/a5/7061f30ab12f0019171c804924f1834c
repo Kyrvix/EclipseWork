@@ -1,0 +1,60 @@
+package main;
+
+public class Car extends Vehicle {
+	
+	private String size;
+	
+	public Car(String size) {
+		super(4, 5, "Land");
+		this.size = size;
+	}
+	
+	public double calcBill() {
+		if(size.equals("Small")) {
+			return 25.50;
+		}
+		else if (size.equals("Medium")) {
+			return 56.25;
+		}
+		else if (size.equals("Large")) {
+			return 110.00;
+		}
+		else {
+			System.out.println("Not a valid size");
+		}
+		return 0;
+	}
+	
+	public void move() {
+		System.out.println("The Car moves forward.");
+	}
+	
+	public void start() {
+		System.out.println("The Car has started.");
+		setEngineOn(true);
+	}
+
+	@Override
+	public int getNumDoors() {
+		return super.getNumDoors();
+	}
+	@Override
+	public String getTypeOfTravel() {
+		return super.getTypeOfTravel();
+	}
+	@Override
+	public int getNumWheels() {
+		return super.getNumWheels();
+	}
+	
+	String typeOfTravel = getTypeOfTravel();
+	int numWheels = getNumWheels();
+	int numDoors = getNumDoors();
+	
+	@Override
+	public String toString() {
+		return "Car [Wheels=" + numWheels + ", Doors=" + numDoors + ", Type of Travel=" + typeOfTravel + ", size=" + size + ", the bill will be=" + this.calcBill();
+	}
+	
+
+}

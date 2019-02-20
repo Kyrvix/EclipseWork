@@ -1,0 +1,32 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Garage {
+	
+	public void work() {
+		Car c1 = new Car();
+		Plane p1 = new Plane();
+		Motorbike m1 = new Motorbike();
+		
+		List<Vehicle> storedVehicles = new ArrayList<Vehicle>();
+		storedVehicles.add(c1);
+		storedVehicles.add(p1);
+		storedVehicles.add(m1);
+		storedVehicles.forEach(System.out::println);
+		
+		
+	}
+
+
+//	public Garage() {
+//		storedVehicles = new ArrayList<Vehicle>();
+//	}
+	
+//	public void addVehicle(Vehicle veh) {
+//		storedVehicles.add(veh);
+//	}
+	
+	
+}

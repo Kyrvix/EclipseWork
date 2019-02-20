@@ -1,0 +1,14 @@
+package main;
+
+import java.util.ArrayList;
+
+public class Collection {
+
+	public void createArrayList() {
+		ArrayList<Integer> numArrayList = new ArrayList<Integer>();
+		for(int i = 100; i < 1000; i++) {
+			numArrayList.add(i);
+		}
+		System.out.println(numArrayList);
+	}
+}

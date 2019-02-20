@@ -1,0 +1,11 @@
+package main;
+
+public class Iteration {
+	
+	public void iterate() {
+		for(int i=101; i<1000; i++) {
+			System.out.println(i);
+		}
+	}
+	
+}

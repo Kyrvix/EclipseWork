@@ -1,0 +1,16 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+		Garage garageOne = new Garage();
+		garageOne.addVehicle(new Car("Large"));
+		garageOne.addVehicle(new Plane("Small"));
+		garageOne.addVehicle(new Motorbike("Large"));
+
+		System.out.println(garageOne.calcBill());
+		System.out.println(garageOne);
+
+	}
+
+}

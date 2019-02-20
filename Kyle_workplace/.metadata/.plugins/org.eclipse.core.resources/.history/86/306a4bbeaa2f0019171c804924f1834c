@@ -1,0 +1,41 @@
+package main;
+
+public class Motorbike extends Vehicle {
+	private String size;
+	
+	public Motorbike(String size) {
+		super(2, 0, "Land");
+		this.size = size;
+	}
+	
+	public void move() {
+		System.out.println("The Motorbike moves forward.");
+	}
+	
+	public void start() {
+		System.out.println("The Motorbike has started.");
+		setEngineOn(true);
+	}
+	
+	@Override
+	public int getNumDoors() {
+		return super.getNumDoors();
+	}
+	@Override
+	public String getTypeOfTravel() {
+		return super.getTypeOfTravel();
+	}
+	@Override
+	public int getNumWheels() {
+		return super.getNumWheels();
+	}
+	
+	String typeOfTravel = getTypeOfTravel();
+	int numWheels = getNumWheels();
+	int numDoors = getNumDoors();
+	
+	@Override
+	public String toString() {
+		return "Motorbike [Wheels=" + numWheels + ", Doors=" + numDoors + ", Type of Travel=" + typeOfTravel + ", size=" + size + "]";
+	}
+}

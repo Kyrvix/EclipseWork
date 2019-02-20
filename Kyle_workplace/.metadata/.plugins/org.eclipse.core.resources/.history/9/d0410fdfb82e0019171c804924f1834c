@@ -1,0 +1,29 @@
+package main;
+
+public class Conditionals {
+	private double numOne;
+	private double numTwo;
+	private boolean bool;
+	
+	public Conditionals(int a, int b, boolean c) {
+		numOne = a;
+		numTwo = b;
+		bool = c;
+	}
+	
+	public void perform() {
+		if(bool == true) {
+			System.out.println(numOne + numTwo);
+		} else {
+			System.out.println(numOne * numTwo);
+		}
+	}
+	
+	public void logic() {
+		int a = 100;
+		if(a < 200) {
+			System.out.println(a);
+			a++;
+		}
+	}
+}

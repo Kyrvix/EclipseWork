@@ -1,0 +1,9 @@
+INDEX VERSION 1.130+C:\Users\Admin\KyleTheSecond_workplace\.metadata\.plugins\org.eclipse.jdt.core
+2109188604.index
+2620168851.index
+2648241989.index
+1661307037.index
+1118218457.index
+2383479488.index
+2388866823.index
+3761845045.index

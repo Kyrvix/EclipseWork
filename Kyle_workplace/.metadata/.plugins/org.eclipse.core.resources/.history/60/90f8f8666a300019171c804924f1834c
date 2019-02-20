@@ -1,0 +1,21 @@
+package maintest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.NotMain;
+
+public class GoldilocksTesting {
+
+	@Test
+	public void isSheAlive() {
+		assertEquals("", NotMain.doThings(100, 80));
+	}
+	
+	@Test
+	public void isSheDead() {
+		assertEquals("She doesn't exist", NotMain.doThings(100, 80));
+	}
+	
+}

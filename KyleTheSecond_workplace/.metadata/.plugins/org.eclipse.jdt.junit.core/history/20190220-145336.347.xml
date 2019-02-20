@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LibraryTesting" project="LibraryTask" tests="6" started="6" failures="0" errors="0" ignored="2">
+  <testsuite name="mainTest.LibraryTesting" time="0.0">
+    <testcase name="uniqueTestMag" classname="mainTest.LibraryTesting" time="0.0"/>
+    <testcase name="uniqueTestMap" classname="mainTest.LibraryTesting" time="0.0"/>
+    <testcase name="removeTest" classname="mainTest.LibraryTesting" time="0.0"/>
+    <testcase name="checkinTest" classname="mainTest.LibraryTesting" time="0.0" ignored="true"/>
+    <testcase name="checkoutTest" classname="mainTest.LibraryTesting" time="0.0" ignored="true"/>
+    <testcase name="uniqueTestBook" classname="mainTest.LibraryTesting" time="0.0"/>
+  </testsuite>
+</testrun>

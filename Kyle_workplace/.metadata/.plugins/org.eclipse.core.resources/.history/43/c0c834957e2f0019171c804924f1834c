@@ -1,0 +1,10 @@
+package main;
+
+public class App {
+
+	public static void main(String[] args) {
+		Person dave = new Person("Dave", 24, "Cleaner");
+		System.out.println(dave.toString());
+	}
+
+}

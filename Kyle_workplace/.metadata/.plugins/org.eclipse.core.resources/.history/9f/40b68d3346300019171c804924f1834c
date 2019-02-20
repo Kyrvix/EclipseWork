@@ -1,0 +1,25 @@
+package testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.BlackJack;
+
+public class BlackJackTesting {
+	@Test
+	public void test1() {
+		assertEquals("It didn't work pal", 0, BlackJack.play(25, 23));
+	}
+	
+	@Test
+	public void highestNumber() {
+		assertEquals(20, BlackJack.play(5, 20));
+	}
+	
+	@Test
+	public void numberWithinBounds() {
+		assertEquals(15, BlackJack.play(15, 23));
+	}
+
+}

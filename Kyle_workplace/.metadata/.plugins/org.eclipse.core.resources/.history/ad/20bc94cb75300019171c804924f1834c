@@ -1,0 +1,35 @@
+package maintest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.NotMain;
+
+public class GoldilocksTesting {
+
+	@Test
+	public void isSheAlive() {
+		assertNotEquals("She doesn't exist", NotMain.doThings(100, 80));
+	}
+	
+	@Test
+	public void porridgeListPopulated() {
+		assertNotEquals("You have no porridge", NotMain.doThings(100, 80));
+	}
+	
+	@Test
+	public void chairListPopulated() {
+		assertNotEquals("You have no chairs", NotMain.doThings(100, 80));
+	}
+	
+	@Test
+	public void ifNoChair() {
+		assertEquals("", NotMain.doThings(0, 0));
+	}
+	
+	@Test
+	public void canFindChair() {
+		assertNotEquals("", NotMain.doThings(999, 999));
+	}
+}

@@ -1,0 +1,42 @@
+package main;
+
+public class Car extends Vehicle {
+	
+	private String size;
+	
+	public Car(String size) {
+		super(4, 5, "Land");
+	}
+	
+	public void move() {
+		System.out.println("The Car moves forward.");
+	}
+	
+	public void start() {
+		System.out.println("The Car has started.");
+		setEngineOn(true);
+	}
+
+	@Override
+	public int getNumDoors() {
+		return super.getNumDoors();
+	}
+	@Override
+	public String getTypeOfTravel() {
+		return super.getTypeOfTravel();
+	}
+	@Override
+	public int getNumWheels() {
+		return super.getNumWheels();
+	}
+	
+	int numWheels = getNumWheels();
+	int numDoors = getNumDoors();
+	
+	@Override
+	public String toString() {
+		return "Car [Wheels=" + numWheels + ", Doors=" + numDoors + ", size=" + size + "]";
+	}
+	
+
+}

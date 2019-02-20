@@ -1,0 +1,10 @@
+package com.qa.enums;
+
+public class App {
+
+	public static void main(String[] args) {
+		Day day = Day.MONDAY;
+
+	}
+
+}

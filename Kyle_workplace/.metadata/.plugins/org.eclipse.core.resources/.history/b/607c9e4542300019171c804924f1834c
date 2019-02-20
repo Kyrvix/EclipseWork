@@ -1,0 +1,15 @@
+package testing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import main.BlackJack;
+
+public class BlackJackTesting {
+	@Test
+	public void test1() {
+		assertEquals("It didn't work pal", 0, BlackJack.play(25, 23));
+	}
+
+}

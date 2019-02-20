@@ -1,0 +1,12 @@
+package main;
+
+public class Chair {
+	
+	private int maxWeight;
+	
+	public Chair(int maxWeight) {
+		
+		this.maxWeight = maxWeight;
+	}
+
+}

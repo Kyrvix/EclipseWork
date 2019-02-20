@@ -1,0 +1,41 @@
+package main;
+
+import java.util.Scanner;
+
+public class Adventure {
+
+	public static void main(String[] args) {
+
+		double dist = 5;
+		String input;
+		Compass comp = new Compass();
+
+		System.out.println("You wake up in a mysterious place. All you see is a grey swamp surrounding you,");
+		System.out.println("Fog floats off the many bogs of water making vision poor,");
+		System.out.println("A cacophony of caws can be heard in the distance,");
+		System.out.println("You notice a watch in your left hand that only seems to contain a distance,");
+		System.out.println("Try North, East, South, or West to continue on your adventure. Good luck.");
+
+		if (dist > 0.7) {
+			for (int i = 0; i < 50; i++) {
+				Scanner sc = new Scanner(System.in);
+				input = sc.nextLine();
+				System.out.println(comp.newDist(input) + "m");
+			}	
+		}
+		else if(dist < 0.0) {
+			for (int i = 0; i < 50; i++) {
+				Scanner sc = new Scanner(System.in);
+				input = sc.nextLine();
+				System.out.println("You have gone too far and must go the other way!");
+				System.out.println(comp.newDist(input) + "m");
+			}
+		}
+		
+		else {
+			System.out.println("You see a box in the distance.");
+			System.out.println("Inside the box, you find treasure and a map to escape");
+		}
+		}
+}
+n

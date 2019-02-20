@@ -1,0 +1,28 @@
+package main;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NotMain {
+
+	public static String doThings(int weight, int temp) {
+		
+		Goldlilocks gold = new Goldlilocks(100, 80);
+		
+		List<Chair> chairList = new ArrayList<>();
+		List<Porridge> porridgeList = new ArrayList<>();
+		
+		
+		chairList.add(new Chair(30));
+		System.out.println(chairList);
+		
+		porridgeList.add(new Porridge(50));
+		
+		if (gold.equals(null)) {
+			return "She doesn't exist";
+		}
+		
+		return "";
+		
+	}
+}

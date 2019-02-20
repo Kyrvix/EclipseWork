@@ -1,0 +1,10 @@
+package main;
+
+public class StringManipulation {
+	
+	public int stringSplit(String a) {
+		String[] inputString = a.split(" ");
+		return inputString.length;
+	}
+	
+}

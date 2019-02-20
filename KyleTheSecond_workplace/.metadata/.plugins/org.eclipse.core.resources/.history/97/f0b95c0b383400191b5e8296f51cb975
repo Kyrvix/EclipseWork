@@ -1,0 +1,6 @@
+package mainTest;
+
+public class authorTesting {
+	@Test
+	public class A
+}

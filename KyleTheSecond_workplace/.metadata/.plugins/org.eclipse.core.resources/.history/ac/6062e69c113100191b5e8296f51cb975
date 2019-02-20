@@ -1,0 +1,33 @@
+package main;
+
+import java.util.Random;
+
+public class Compass {
+	
+	private double distance = 5;
+	private String direction;
+
+	public double newDist(String direction) {
+		Random r = new Random();
+		if(direction.equals("North") || direction.equals("north") || direction.equals("N") || direction.equals("n")) {
+			return distance -= r.doubles(0.5, 1.0).findFirst().getAsDouble();
+		}
+		else if(direction.equals("East") || direction.equals("east") || direction.equals("E") || direction.equals("e")) {
+			return distance -= r.doubles(1.0, 2.0).findFirst().getAsDouble();
+		}
+		else if(direction.equals("South") || direction.equals("south") || direction.equals("S") || direction.equals("s")) {
+			return distance += r.doubles(0.5, 1.0).findFirst().getAsDouble();
+		}
+		else if(direction.equals("West") || direction.equals("west") || direction.equals("W") || direction.equals("w")) {
+			return distance += r.doubles(1.0, 2.0).findFirst().getAsDouble();
+		}
+		else {
+			System.out.println("That is not a valid direction");
+			return distance;
+		}
+			
+		
+		
+		return 0;
+	}
+}

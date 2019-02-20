@@ -1,0 +1,11 @@
+package main;
+
+public class Collection {
+
+	public void createArray() {
+		for(int i = 0; i < 101; i++) {
+			int[] numArray = {i};
+			System.out.println(numArray[i]);
+		}
+	}
+}

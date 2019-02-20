@@ -1,0 +1,21 @@
+package mainTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+import main.Author;
+
+public class AuthorTest {
+	@Ignore
+	public void testAuthor() {
+		Author testing = new Author("a");
+		assertNull(testing.getName());
+	}
+	@Test
+	public void testAuthorString() {
+		Author testing = new Author("a");
+		assertNotNull(testing.getName());
+	}
+}

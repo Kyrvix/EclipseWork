@@ -1,0 +1,13 @@
+package main;
+
+public class Cat {
+	public int weight;
+	public String name;
+	public int lives;
+
+	public Cat(int weight, String name, int lives) {
+		this.weight = weight;
+		this.name = name;
+		this.lives = lives;
+	}
+}

@@ -1,0 +1,57 @@
+package main;
+
+import java.util.List;
+
+public class Goldlilocks {
+
+	private int weight;
+	private int temp;
+
+	public Goldlilocks(int weight, int temp) {
+
+		this.weight = weight;
+		this.temp = temp;
+	}
+
+	public String findChair(Goldlilocks gold, List<Chair> chairList, List<Porridge> porridgeList) {
+
+		StringBuilder sb = new StringBuilder();
+		sb.append("");
+
+		for (int i = 0; i < chairList.size(); i++) {
+
+			if (gold.weight > chairList.get(i).getMaxWeight() && gold.temp > porridgeList.get(i).getTemp()) {
+
+				sb.append("Chair " + (i + 1) + ", ");
+			}
+
+		}
+
+		String answer = sb.toString();
+
+		if (answer.equals("")) {
+
+			return "No suitable Chair";
+		}
+
+		return sb.toString();
+
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public int getTemp() {
+		return temp;
+	}
+
+	public void setTemp(int temp) {
+		this.temp = temp;
+	}
+
+}

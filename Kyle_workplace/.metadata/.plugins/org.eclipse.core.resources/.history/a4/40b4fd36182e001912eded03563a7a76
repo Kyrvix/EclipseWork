@@ -1,0 +1,21 @@
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Calculator calculate = new Calculator();
+		Scanner newInput = new Scanner(System.in);
+		boolean badInput = true;
+		int input1 = 0;
+		int input2 = 0;
+		String sign = "";
+		
+		
+		System.out.println(calculate.addition(4, 7));
+
+		System.out.println(calculate.divide(5, 13));
+	}
+
+}

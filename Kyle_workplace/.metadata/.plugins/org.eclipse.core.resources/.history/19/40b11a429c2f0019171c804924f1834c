@@ -1,0 +1,16 @@
+package main;
+
+public class Motorbike extends Vehicle {
+	public Motorbike() {
+		super(2, 0, "Land", "Small");
+	}
+	
+	public void move() {
+		System.out.println("The Motorbike moves forward.");
+	}
+	
+	public void start() {
+		System.out.println("The Motorbike has started.");
+		setEngineOn(true);
+	}
+}

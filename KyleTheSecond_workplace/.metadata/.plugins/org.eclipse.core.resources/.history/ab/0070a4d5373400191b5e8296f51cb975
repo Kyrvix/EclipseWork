@@ -1,0 +1,11 @@
+package mainTest;
+
+import main.Author;
+
+public class Test {
+	@Test
+	public void testAuthor() {
+		Author testing = new Author();
+		assertNull(testing.getName());
+	}
+}

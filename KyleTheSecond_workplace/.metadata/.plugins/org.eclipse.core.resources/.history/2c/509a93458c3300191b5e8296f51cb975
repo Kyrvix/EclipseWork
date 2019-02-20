@@ -1,0 +1,15 @@
+package main;
+
+public class UsingExceptions {
+
+	public static void main(String[] args) {
+		UsingException refVariable = new UsingException;
+		
+	}
+	
+	public int divide() {
+		
+	}
+
+
+}

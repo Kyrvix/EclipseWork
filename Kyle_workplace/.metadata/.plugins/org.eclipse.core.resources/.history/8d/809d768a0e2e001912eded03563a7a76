@@ -1,0 +1,11 @@
+package main;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Results indResults = new Results(70, 60, 90);
+		indResults.printResults();
+		indResults.getPerc();
+	}
+
+}

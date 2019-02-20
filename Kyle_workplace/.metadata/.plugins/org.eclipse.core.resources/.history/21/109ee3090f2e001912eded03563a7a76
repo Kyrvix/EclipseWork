@@ -1,0 +1,36 @@
+package main;
+
+public class Results {
+
+	private double physics;
+	private double chemistry;
+	private double biology;
+	private double total;
+	private double percentage;
+
+	public Results(int phy, int che, int bio) {
+		physics = phy;
+		chemistry = che;
+		biology = bio;
+		total = physics + chemistry + biology;
+	}
+
+	public void printResults() {
+		System.out.println("The Physics result is " + physics);
+		System.out.println("The Chemistry result is " + chemistry);
+		System.out.println("The Biology result is " + biology);
+		System.out.println("The total mark is " + total);
+	}
+
+	public void getPerc() {
+		total *= 100;
+		percentage = total / 450;
+		System.out.println("Total percentage: " + percentage);
+		if(percentage < 60) {
+			System.out.println("Unfortunately, you have failed");
+		} 
+		else {
+			System.out.println("Congratulations, you have passed!");
+		}
+	}
+}

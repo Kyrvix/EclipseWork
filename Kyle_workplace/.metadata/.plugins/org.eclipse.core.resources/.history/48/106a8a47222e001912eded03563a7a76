@@ -1,0 +1,18 @@
+package main;
+
+public class Iteration {
+	
+	public void iterate() {
+		for(int i=101; i<1000; i++) {
+			System.out.println(i);
+		}
+	}
+	
+	public void numberWords() {
+		String[] numberWordArray = {"One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten"};
+		for(String i : numberWordArray) {
+			System.out.println(i);
+		}
+	}
+	
+}
