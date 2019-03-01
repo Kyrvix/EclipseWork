@@ -1,0 +1,26 @@
+package com.qa.assessment.taskTwo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Mainpage {
+	WebDriver driver;
+	
+	public Mainpage(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(className = "icon-gear2 icon-md")
+	private WebElement manage;
+	
+	@FindBy(xpath = "//*[@id=\"main-panel\"]/div[16]/a/dl/dt")
+	private WebElement newUser;
+	
+	public void createNew() {
+		manage.click();
+		newUser.click();
+	}
+}

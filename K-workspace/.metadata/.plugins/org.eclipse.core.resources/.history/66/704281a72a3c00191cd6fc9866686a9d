@@ -1,0 +1,37 @@
+package com.qa.assessment.taskTwo;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Collection;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+@RunWith(Parameterized.class)
+public class TaskTwoTest {
+	WebDriver driver;
+	
+	@Parameters
+	public static Collection<Object[]> data() throws IOException{
+		FileInputStream file = new FileInputStream(Constants2.jenkins);
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+		
+		Object[][] ob = new Object[sheet.getPhysicalNumberOfRows()-1][5];
+		
+	}
+	
+	@Before
+	public void startup() {
+		System.setProperty("webdriver.chrome.driver", Constants2.driver);
+		driver = new ChromeDriver();
+		driver.get(Constants2.jenkins);
+	}
+}

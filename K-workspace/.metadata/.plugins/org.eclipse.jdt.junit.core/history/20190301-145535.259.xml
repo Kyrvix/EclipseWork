@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TaskTwoTest" project="Wk4Assessment" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.assessment.taskTwo.TaskTwoTest" time="24.716">
+    <testsuite name="[0]" time="9.283">
+      <testcase name="newUsers[0]" classname="com.qa.assessment.taskTwo.TaskTwoTest" time="9.283"/>
+    </testsuite>
+    <testsuite name="[1]" time="6.83">
+      <testcase name="newUsers[1]" classname="com.qa.assessment.taskTwo.TaskTwoTest" time="6.83"/>
+    </testsuite>
+    <testsuite name="[2]" time="8.603">
+      <testcase name="newUsers[2]" classname="com.qa.assessment.taskTwo.TaskTwoTest" time="8.603"/>
+    </testsuite>
+  </testsuite>
+</testrun>

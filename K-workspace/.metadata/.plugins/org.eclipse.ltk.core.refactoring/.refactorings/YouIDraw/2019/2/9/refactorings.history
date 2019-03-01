@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.qa.testSite&apos; to &apos;com.qa.YouIDraw&apos;&#x0D;&#x0A;- Original project: &apos;YouIDraw&apos;&#x0D;&#x0A;- Original element: &apos;YouIDraw/src/main/java/com.qa.testSite&apos;&#x0D;&#x0A;- Renamed element: &apos;YouIDraw/src/main/java/com.qa.YouIDraw&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.qa.testSite&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.qa.testSite" name="com.qa.YouIDraw" qualified="false" references="true" stamp="1551195474395" textual="false" version="1.0"/>
+</session>

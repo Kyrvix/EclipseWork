@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SecondRunner" project="Cucumber" tests="12" started="12" failures="4" errors="0" ignored="0">
+  <testsuite name="com.qa.cucumberFeatures.SecondRunner" time="14.989">
+    <testsuite name="Feature: Searching for terms" time="14.989">
+      <testsuite name="Scenario Outline: Search bing for google" time="14.989">
+        <testsuite name="Examples:" time="14.989">
+          <testsuite name="| https://www.bing.com | QAConsulting |" time="0.157" incomplete="true">
+            <failure>java.lang.AssertionError: Still on bing&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at com.qa.cucumberFeatures.StepDefinition.i_am_taken_to_a_list_of_data_for_that_search(StepDefinition.java:42)&#13;
+	at ✽.Then I am taken to a list of data for that search(C:/Users/Admin/Downloads/Parametisation.feature:9)&#13;
+&#13;
+</failure>
+            <testcase name="Given I go to &quot;https://www.bing.com&quot; website" classname="| https://www.bing.com | QAConsulting |" time="0.145"/>
+            <testcase name="When I search for &quot;QAConsulting&quot;" classname="| https://www.bing.com | QAConsulting |" time="0.009"/>
+            <testcase name="Then I am taken to a list of data for that search" classname="| https://www.bing.com | QAConsulting |" time="0.002">
+              <failure>java.lang.AssertionError: Still on bing&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at com.qa.cucumberFeatures.StepDefinition.i_am_taken_to_a_list_of_data_for_that_search(StepDefinition.java:42)&#13;
+	at ✽.Then I am taken to a list of data for that search(C:/Users/Admin/Downloads/Parametisation.feature:9)&#13;
+&#13;
+</failure>
+            </testcase>
+          </testsuite>
+          <testsuite name="| https://www.bing.com | Guru99 |" time="2.122">
+            <testcase name="Given I go to &quot;https://www.bing.com&quot; website" classname="| https://www.bing.com | Guru99 |" time="0.539"/>
+            <testcase name="When I search for &quot;Guru99&quot;" classname="| https://www.bing.com | Guru99 |" time="0.005"/>
+            <testcase name="Then I am taken to a list of data for that search" classname="| https://www.bing.com | Guru99 |" time="1.578"/>
+          </testsuite>
+          <testsuite name="| https://www.bing.com | BlazeDemo |" time="2.191">
+            <testcase name="Given I go to &quot;https://www.bing.com&quot; website" classname="| https://www.bing.com | BlazeDemo |" time="0.598"/>
+            <testcase name="When I search for &quot;BlazeDemo&quot;" classname="| https://www.bing.com | BlazeDemo |" time="0.019"/>
+            <testcase name="Then I am taken to a list of data for that search" classname="| https://www.bing.com | BlazeDemo |" time="1.574"/>
+          </testsuite>
+          <testsuite name="| https://www.bing.com | Automated Testing |" time="0.681" incomplete="true">
+            <failure>java.lang.AssertionError: Still on bing&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at com.qa.cucumberFeatures.StepDefinition.i_am_taken_to_a_list_of_data_for_that_search(StepDefinition.java:42)&#13;
+	at ✽.Then I am taken to a list of data for that search(C:/Users/Admin/Downloads/Parametisation.feature:9)&#13;
+&#13;
+</failure>
+            <testcase name="Given I go to &quot;https://www.bing.com&quot; website" classname="| https://www.bing.com | Automated Testing |" time="0.671"/>
+            <testcase name="When I search for &quot;Automated Testing&quot;" classname="| https://www.bing.com | Automated Testing |" time="0.01"/>
+            <testcase name="Then I am taken to a list of data for that search" classname="| https://www.bing.com | Automated Testing |" time="0.0">
+              <failure>java.lang.AssertionError: Still on bing&#13;
+	at org.junit.Assert.fail(Assert.java:88)&#13;
+	at org.junit.Assert.assertTrue(Assert.java:41)&#13;
+	at org.junit.Assert.assertFalse(Assert.java:64)&#13;
+	at com.qa.cucumberFeatures.StepDefinition.i_am_taken_to_a_list_of_data_for_that_search(StepDefinition.java:42)&#13;
+	at ✽.Then I am taken to a list of data for that search(C:/Users/Admin/Downloads/Parametisation.feature:9)&#13;
+&#13;
+</failure>
+            </testcase>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,5 @@
+package com.qa.assessment.taskOne;
+
+public class Constants {
+	public static final String driver = "C:\\Users\\Admin\\Desktop\\chromedriver.exe";
+}

@@ -1,0 +1,19 @@
+package com.qa.BlackJackTesting;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+import com.qa.BlackJack.BlackJack;
+
+public class DealerResultTest {
+	@Test
+	public void playerBust() {
+		assertEquals("Player bust not working, returning highest number", 17, BlackJack.playBlackJack(23, 17));
+	}
+
+	@Test
+	public void neitherBust() {
+		assertEquals("Dealer didn't bust", 18, BlackJack.playBlackJack(17, 18));
+	}
+}

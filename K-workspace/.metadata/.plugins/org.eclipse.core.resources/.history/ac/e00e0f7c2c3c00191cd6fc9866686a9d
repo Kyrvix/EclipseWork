@@ -1,0 +1,13 @@
+package com.qa.assessment.taskTwo;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Mainpage {
+	@FindBy(xpath = "//*[@id=\"tasks\"]/div[4]/a[2]")
+	private WebElement manage;
+	
+	public void createNew() {
+		manage.click();
+	}
+}

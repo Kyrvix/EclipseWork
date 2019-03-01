@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="WaitingTest" project="UsingWaits" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.usingWaitsTest.WaitingTest" time="9.441">
+    <testcase name="implicitTest" classname="com.qa.usingWaitsTest.WaitingTest" time="9.441"/>
+  </testsuite>
+</testrun>

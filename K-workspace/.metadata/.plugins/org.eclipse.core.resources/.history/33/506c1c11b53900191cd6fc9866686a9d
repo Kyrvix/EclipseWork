@@ -1,0 +1,76 @@
+package com.qa.usingSelenium;
+
+import static org.junit.Assert.*;
+
+import org.junit.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTesting {
+	ChromeDriver driver;
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",  "C:/Users/Admin/Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	
+	@After
+	public void teardown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void methodTest() throws InterruptedException {
+		driver.manage().window().maximize();
+		driver.get("http://automationpractice.com/index.php");
+		
+		WebElement searchBar = driver.findElement(By.xpath("//*[@id=\"search_query_top\"]"));
+		searchBar.sendKeys("Dress");
+		searchBar.submit();
+		
+		WebElement theDress = driver.findElement(By.xpath("//*[@id=\"add_to_cart\"]/button/span"));
+		theDress.click();
+		
+		Thread.sleep(400);
+
+		WebElement addCart = driver.findElement(By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a/span"));
+		addCart.click();
+		
+		WebElement procCheckout = driver.findElement(By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a/span"));
+		procCheckout.click();
+		
+		
+
+		
+		Thread.sleep(500);
+		
+//		password.sendKeys("password");
+//		
+//		WebElement save = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/div/center/table/tbody/tr[3]/td[2]/p/input");
+//		save.click();
+//		
+//		
+//		WebElement login = driver.findElementByXPath("/html/body/div/center/table/tbody/tr[2]/td/div/center/table/tbody/tr/td[2]/p/small/a[4]");
+//		login.click();
+//		
+//		WebElement user = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/table/tbody/tr[1]/td[2]/p/input");
+//		user.sendKeys("The Bob");
+//		
+//		WebElement pass = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/table/tbody/tr[2]/td[2]/p/input");
+//		pass.sendKeys("password");
+//		
+//		WebElement log = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/form/div/center/table/tbody/tr/td[1]/table/tbody/tr[3]/td[2]/p/input");
+//		log.click();
+//		
+//		WebElement success = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/big/blockquote/blockquote/font/center/b");
+//		assertEquals("Did not succeed", "**Successful Login**", success.getText());
+	}
+}
+//WebElement searchBox = driver.findElement(By.name("q"));
+//searchBox.send("qa consulting");
+
+
+//WebElement checkElement = driver.findElement(By.xpath("//*[@id=\"b_context\"]/li[1]/div/div[1]/h2"));
+//   //*[@id="hplogo"]

@@ -1,0 +1,11 @@
+package com.qa.assessment.taskOne;
+
+import org.junit.Before;
+import org.openqa.selenium.WebDriver;
+
+public class TaskOneTest {
+	@Before
+	public void startup() {
+		System.setProperty("webdriver.chrome.driver", value)
+	}
+}

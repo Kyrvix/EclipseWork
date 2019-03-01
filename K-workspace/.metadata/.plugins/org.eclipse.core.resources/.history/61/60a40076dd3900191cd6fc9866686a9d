@@ -1,0 +1,15 @@
+package com.qa.youIDrawTest;
+
+import org.junit.Before;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class YouIDrawTest {
+ChromeDriver driver;
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",  "C:/Users/Admin/Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.youidraw.com/apps/painter/#");
+	}
+}

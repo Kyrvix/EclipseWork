@@ -1,0 +1,36 @@
+package com.qa.usingWaitsTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.usingWaits.Waiting;
+
+public class WaitingTest {
+	WebDriver driver;
+	
+	@Before
+	public void startUp() {
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Admin/Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+	}
+	
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void implicitTest() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get("https://christophperrins.github.io/TestingSite/");
+		Waiting wait = PageFactory.initElements(driver, Waiting.class);
+		wait.findTheHate();
+	}
+}

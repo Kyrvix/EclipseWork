@@ -1,0 +1,11 @@
+package com.qa.youIDraw;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class Drawing {
+	@FindBy(id = "catch")
+	private WebElement canvas;
+	
+	
+}

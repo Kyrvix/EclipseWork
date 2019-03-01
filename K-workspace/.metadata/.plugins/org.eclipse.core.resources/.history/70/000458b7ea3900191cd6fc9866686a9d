@@ -1,0 +1,39 @@
+package com.qa.usingWaitsTest;
+
+import java.util.concurrent.TimeUnit;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.qa.usingWaits.Waiting;
+
+public class WaitingTest {
+	WebDriver driver;
+	
+	@Before
+	public void startUp() {
+		System.setProperty("webdriver.chrome.driver", "C:/Users/Admin/Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://christophperrins.github.io/TestingSite/");
+	}
+	
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void implicitTest() {
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		WebElement wait = (new WebDriverWait(driver, 50)).until(ExpectedConditions.presenceOfElementLocated(By.tagName("h2")));
+	}
+}

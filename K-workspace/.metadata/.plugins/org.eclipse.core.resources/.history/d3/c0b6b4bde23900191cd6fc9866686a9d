@@ -1,0 +1,30 @@
+package com.qa.youIDraw;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class Drawing {
+	Actions action = new Actions(driver);
+	
+	@FindBy(id = "brush")
+	private WebElement brush;
+	
+	@FindBy(id = "edSize")
+	private WebElement brushSize;
+	
+	@FindBy(id = "catch")
+	private WebElement canvas;
+	
+	public void selectBrush() {
+		brush.click();
+		brushSize.click();
+		action.doubleClick().perform();
+		action.sendKeys("12").perform();
+	}
+	
+	public void selectCanvas() {
+		canvas.click();
+//		canvas.
+	}
+}

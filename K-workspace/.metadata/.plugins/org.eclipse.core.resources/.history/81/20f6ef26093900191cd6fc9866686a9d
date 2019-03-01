@@ -1,0 +1,39 @@
+package com.qa.BlackJackTesting;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.qa.BlackJack.BlackJack;
+
+public class BlackJackTest {
+	@Test
+	public void notValid() {
+		assertEquals(-1, BlackJack.playBlackJack(15, 33));
+	}
+	
+	@Test
+	public void dealerBust() {
+		assertEquals(20, BlackJack.playBlackJack(20, 27));
+	}
+	
+	@Test
+	public void playerBust() {
+		assertEquals(17, BlackJack.playBlackJack(23, 17));
+	}
+	
+	@Test
+	public void neitherBust() {
+		assertEquals(18, BlackJack.playBlackJack(17, 18));
+	}
+	
+	@Test
+	public void bothBust() {
+		assertEquals(0, BlackJack.playBlackJack(24, 22));
+	}
+	
+	@Test
+	public void playerWins() {
+		assertEquals(20, BlackJack.playBlackJack(20, 15));
+	}
+}

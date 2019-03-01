@@ -1,0 +1,55 @@
+package com.qa.usingSelenium;
+
+import static org.junit.Assert.*;
+
+import org.junit.*;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.PageFactory;
+
+import com.qa.testSite.AddUser;
+import com.qa.testSite.LogInfo;
+import com.qa.testSite.LoginUser;
+
+public class SeleniumTesting {
+	ChromeDriver driver;
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",  "C:/Users/Admin/Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://thedemosite.co.uk/");
+	}
+	
+	@After
+	public void teardown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void methodTest() throws InterruptedException {
+		driver.manage().window().maximize();
+		
+		AddUser addUser = PageFactory.initElements(driver, AddUser.class);
+		addUser.addUserClick();
+		
+		LogInfo logInfo = PageFactory.initElements(driver, LogInfo.class);
+		logInfo.infoAndClick("Roopy", "truncated");
+		
+		LoginUser logUser = PageFactory.initElements(driver, LoginUser.class);
+		logUser.loginClick();
+		
+		logInfo.infoAndClick("Roopy", "truncated");
+		
+		Thread.sleep(4000);
+		
+		WebElement success = driver.findElementByXPath("/html/body/table/tbody/tr/td[1]/big/blockquote/blockquote/font/center/b");
+		assertEquals("Did not succeed", "**Successful Login**", success.getText());
+	}
+}
+//WebElement searchBox = driver.findElement(By.name("q"));
+//searchBox.send("qa consulting");
+
+
+//WebElement checkElement = driver.findElement(By.xpath("//*[@id=\"b_context\"]/li[1]/div/div[1]/h2"));
+//   //*[@id="hplogo"]

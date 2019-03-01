@@ -1,0 +1,26 @@
+package com.qa.usingSelenium;
+
+import org.junit.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumTesting {
+	ChromeDriver driver;
+	
+	@Before
+	public void setup() {
+		System.setProperty("webdriver.chrome.driver",  "Desktop/chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	
+	@After
+	public void teardown() {
+		driver.quit();
+	}
+	
+	@Test
+	public void methodTest() {
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+	}
+}

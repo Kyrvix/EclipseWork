@@ -1,0 +1,30 @@
+package com.qa.DDTTest;
+
+import java.io.FileInputStream;
+
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.junit.Test;
+
+public class ReadFromExcel {
+	@Test
+	public void loginTest() throws Exception {
+		FileInputStream file = new FileInputStream("C:\\Users\\Admin\\Downloads\\DemoSiteDDT.xlsx");
+		@SuppressWarnings("resource")
+		XSSFWorkbook workbook = new XSSFWorkbook(file);
+		XSSFSheet sheet = workbook.getSheetAt(0);
+
+		// Reading
+		for (int rowNum = 1; rowNum < sheet.getPhysicalNumberOfRows(); rowNum++) {
+			for (int colNum = 0; colNum < sheet.getRow(rowNum).getPhysicalNumberOfCells(); colNum++) {
+				XSSFCell cell = sheet.getRow(rowNum).getCell(colNum);
+				String userCell = cell.getStringCellValue();
+				System.out.println(userCell);
+				// assertEquals(“Expected”, userCell);
+			}
+		}
+		file.close();
+	}
+
+}

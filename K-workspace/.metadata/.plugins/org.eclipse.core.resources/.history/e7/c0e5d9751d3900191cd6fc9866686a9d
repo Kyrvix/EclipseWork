@@ -1,0 +1,33 @@
+package com.qa.BlackJackTesting;
+
+import java.util.Scanner;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+public class TestRunner {
+
+	public static void main(String[] args) {
+		TestRunner runner = new TestRunner();
+
+	}
+	
+	public void allTests() {
+		Result result = JUnitCore.runClasses(DealerMiscSuite.class, DealerResultTest.class);
+		
+		System.out.println("All Results passed: " + result.wasSuccessful());
+		
+		if(!result.wasSuccessful()) {
+			System.out.println("Failed Tests:");
+			for(Failure failure: result.getFailures()) {
+				System.out.println(failure.getMessage());
+			}
+		}
+	}
+	
+//	public void inputTest() {
+//		Scanner scanner = new Scanner(String )
+//	}
+
+}

@@ -1,0 +1,17 @@
+package com.qa.usingSelenium;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class BookFlight {
+	Actions action;
+	
+	@FindBy(xpath = "/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[3]/td[2]/b/select")
+	private WebElement passengers;
+	
+	public void numPass() {
+		passengers.click();
+		action
+	}
+}

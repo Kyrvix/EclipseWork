@@ -1,0 +1,30 @@
+package com.qa.assessment.taskTwo;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Collection;
+
+import org.junit.Before;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+@RunWith(Parameterized.class)
+public class TaskTwoTest {
+	WebDriver driver;
+	
+	@Parameters
+	public static Collection<Object[]> data() throws FileNotFoundException{
+		FileInputStream file = new FileInputStream(Constants2.jenkins);
+		
+	}
+	
+	@Before
+	public void startup() {
+		System.setProperty("webdriver.chrome.driver", Constants2.driver);
+		driver = new ChromeDriver();
+		driver.get(Constants2.jenkins);
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="BingTesting" project="bingMaintainable" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.bingMaintainable.BingTesting" time="10.939">
+    <testcase name="test1" classname="com.qa.bingMaintainable.BingTesting" time="3.633"/>
+    <testcase name="test2" classname="com.qa.bingMaintainable.BingTesting" time="3.628"/>
+    <testcase name="test3" classname="com.qa.bingMaintainable.BingTesting" time="3.678"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ParaTest" project="TryingDDT" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.qa.DDTTest.ParaTest" time="49.115">
+    <testsuite name="[0]" time="7.739">
+      <testcase name="test[0]" classname="com.qa.DDTTest.ParaTest" time="7.739"/>
+    </testsuite>
+    <testsuite name="[1]" time="30.89">
+      <testcase name="test[1]" classname="com.qa.DDTTest.ParaTest" time="30.89"/>
+    </testsuite>
+    <testsuite name="[2]" time="5.232">
+      <testcase name="test[2]" classname="com.qa.DDTTest.ParaTest" time="5.232"/>
+    </testsuite>
+    <testsuite name="[3]" time="5.253">
+      <testcase name="test[3]" classname="com.qa.DDTTest.ParaTest" time="5.253"/>
+    </testsuite>
+  </testsuite>
+</testrun>
